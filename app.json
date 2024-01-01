@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "Hospital-Manegement-App",
+    "scheme": "Hospital-Manegement-App",
     "slug": "Hospital-Manegement-App",
     "version": "1.0.0",
     "orientation": "portrait",
