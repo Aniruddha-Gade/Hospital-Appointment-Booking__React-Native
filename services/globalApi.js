@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 
-// const BASE_URL = "http:/192.168.0.103:1337/api"
-const BASE_URL = process.env.EXPO_PUBLIC_BASE_URL
+const BASE_URL = "http:/192.168.0.104:1337/api"
+// const BASE_URL = process.env.EXPO_PUBLIC_BASE_URL
 const API_KEY = process.env.EXPO_PUBLIC_API_KEY
 
 
@@ -24,13 +24,16 @@ const getHospitalByCategory = (category) => AxiosInstance.get(`/hospitals?filter
 
 
 const getDoctorsByCategory = (category) => AxiosInstance.get(`/doctors?filters[categories][Name][$in]=${category}&populate=*`);
- 
+
+
+const createAppointement = (data) => AxiosInstance.post('/appointements', data)
 
 export default {
     getSlider,
     getCategories,
-    getPremiumHospital, 
+    getPremiumHospital,
     getHospitalByCategory,
-    getDoctorsByCategory
+    getDoctorsByCategory,
+    createAppointement
 
 }

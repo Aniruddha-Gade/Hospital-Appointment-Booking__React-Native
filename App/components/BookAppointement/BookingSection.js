@@ -1,16 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, TouchableOpacity, StyleSheet, TextInput } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity, StyleSheet, TextInput, Alert } from 'react-native';
 import Colors from '../../../assets/shared/Colors';
 import SubHeading from '../../components/Home/SubHeading';
 import moment from 'moment'
+import { useUser } from '@clerk/clerk-expo';
+import globalApi from '../../../services/globalApi';
 
 
-const BookingSection = () => {
+
+const BookingSection = ({ hospital }) => {
 
   const [next7Days, setNext7Days] = useState([])
   const [selectedDate, setSelectedDate] = useState(next7Days[0]?.date);
   const [timeList, setTimeList] = useState([])
   const [selectedTime, setSelectedTime] = useState(next7Days[0]?.date);
+  const [notes, setNotes] = useState('');
+  const { user } = useUser();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
 
   useEffect(() => {
     getDays();
@@ -54,7 +61,37 @@ const BookingSection = () => {
     }
     setTimeList(timeList)
   }
-  console.log("timeList = ", timeList)
+  // console.log("timeList = ", timeList)
+
+  // send data to backend
+  const handleBookAppointement = () => {
+
+    // Perform validation
+    if (!selectedDate || !selectedTime || !hospital.id || !notes) {
+      Alert.alert('Error', 'Please fill in all the required fields.');
+      return;
+    }
+
+    setIsSubmitting(true)
+    const data = {
+      data: {
+        UserName: user.fullName,
+        Email: user.primaryEmailAddress.emailAddress,
+        Date: selectedDate,
+        Time: selectedTime,
+        hospital: hospital.id,
+        Note: notes,
+      }
+    };
+
+    console.log('This Booked Appointement Data is sent to Strapi --> ', data)
+    globalApi.createAppointement(data)
+      .then(() => console.log('🟢 Booked Data sent Successfully'))
+      .catch(error => console.log('🔴Error while seding data to backend = ', error))
+
+
+    setIsSubmitting(false)
+  }
 
 
   return (
@@ -63,10 +100,12 @@ const BookingSection = () => {
 
       <SubHeading subHeadingTitle={'Day'} seeAll={false} />
 
+      {/* Date */}
       <FlatList
         data={next7Days}
         horizontal={true}
         showsHorizontalScrollIndicator={false}
+        style={{ marginBottom: 15 }}
         renderItem={({ item }) => (
           <TouchableOpacity
             onPress={() => setSelectedDate(item.date)}
@@ -86,11 +125,12 @@ const BookingSection = () => {
 
       <SubHeading subHeadingTitle={'Time'} seeAll={false} />
 
-
+      {/* time */}
       <FlatList
         data={timeList}
         horizontal={true}
         showsHorizontalScrollIndicator={false}
+        style={{ marginBottom: 15 }}
         renderItem={({ item }) => (
           <TouchableOpacity
             onPress={() => setSelectedTime(item.time)}
@@ -109,18 +149,22 @@ const BookingSection = () => {
 
       <SubHeading subHeadingTitle={'Note'} seeAll={false} />
 
+      {/* notes */}
       <TextInput
+        onChangeText={(val) => setNotes(val)}
         numberOfLines={3}
         placeholder='Write Note Here'
         style={{ backgroundColor: Colors.ligh_gray, padding: 10, borderRadius: 10, borderColor: Colors.secondary, borderWidth: 1 }}
       />
 
+      {/* Make appointement Btn */}
       <TouchableOpacity
-
+        onPress={handleBookAppointement}
+        disabled={isSubmitting}
         style={{ backgroundColor: Colors.primary, borderRadius: 99, padding: 13, margin: 10, left: 0, right: 0, marginBottom: 10, zIndex: 20, }}
       >
         <Text style={{ fontSize: 20, textAlign: 'center', color: Colors.white, fontFamily: 'appFont-semibold', fontSize: 17 }}>
-          Make Appointement
+          {isSubmitting ? 'Submitting...' : 'Make Appointment'}
         </Text>
       </TouchableOpacity>
 

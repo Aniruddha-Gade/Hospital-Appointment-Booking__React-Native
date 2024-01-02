@@ -15,7 +15,7 @@ const BookAppointement = () => {
       <HospitalAppointementInfo hospital={route.params.hospital} />
       <ActionButton />
       <HorizontalLine />
-      <BookingSection />
+      <BookingSection hospital={route.params.hospital} />
 
     </ScrollView>
   );

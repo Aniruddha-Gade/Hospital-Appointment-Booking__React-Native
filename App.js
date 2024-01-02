@@ -1,6 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
-// import { CLERK_PUBLISHABLE_KEY } from '@env';
+import { SafeAreaView, StyleSheet, } from "react-native";
 import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-expo";
 import { useFonts } from 'expo-font';
 import { NavigationContainer } from "@react-navigation/native";
