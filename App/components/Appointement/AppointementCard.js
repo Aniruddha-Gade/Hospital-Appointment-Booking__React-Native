@@ -11,7 +11,7 @@ const AppointementCard = ({ appointement }) => {
 
   return (
     <View style={{ padding: 15, borderWidth: 1, borderColor: Colors.ligh_gray, borderRadius: 10, backgroundColor: Colors.white, marginTop: 10 }}>
-      <Text style={{ fontSize: 16, fontFamily: 'appFont-semibold', marginTop: 10 }}>
+      <Text style={{ fontSize: 16, fontFamily: 'appFont-semibold', marginBottom: 10 }}>
         {date} - {appointement.attributes.Time}
       </Text>
 
