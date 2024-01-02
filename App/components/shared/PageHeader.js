@@ -1,8 +1,7 @@
 import React from 'react';
-import { View, Text, } from 'react-native';
+import { View, Text, TouchableOpacity} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const PageHeader = ({ title }) => {
 
