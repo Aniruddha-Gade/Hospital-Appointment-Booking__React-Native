@@ -19,22 +19,22 @@ const TabNavigation = () => {
     }}>
       <Tab.Screen name='Home1' component={HomeNavigation}
         options={{
-          tabBarIcon: ({ color, size }) => {
+          tabBarIcon: ({ color, size }) => (
             <Ionicons name="home" size={size} color={color} />
-          }
+          )
         }}
       />
       <Tab.Screen name='Appointement' component={Appointement}
         options={{
-          tabBarIcon: ({ color, size }) => {
-            <Ionicons name="calendar" size={size} color={Colors.primary} />
-          }
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="calendar" size={size} color={color} />
+          )
         }} />
       <Tab.Screen name='Profile' component={Profile}
         options={{
-          tabBarIcon: ({ color, size }) => {
+          tabBarIcon: ({ color, size }) => (
             <FontAwesome name="user-circle" size={size} color={color} />
-          }
+          )
         }} />
 
     </Tab.Navigator>
