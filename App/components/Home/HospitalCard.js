@@ -1,18 +1,14 @@
 import React from 'react'
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import Colors from '../../../assets/shared/Colors'
-import { useNavigation } from '@react-navigation/native'
 
 
 export const HospitalCard = ({ hospital }) => {
 
-    const navigation = useNavigation()
 
-    
+
     return (
-        <TouchableOpacity onPress={() => navigation.navigate('hospital-details')}>
-
-
+        <View>
             <View style={{ width: 200, borderRadius: 10, borderWidth: 1, borderColor: Colors.ligh_gray, marginRight: 10 }}>
                 <Image
                     source={{ uri: hospital.attributes.Image.data.attributes.url }}
@@ -27,6 +23,6 @@ export const HospitalCard = ({ hospital }) => {
                     </Text>
                 </View>
             </View>
-        </TouchableOpacity>
+        </View>
     )
 }
