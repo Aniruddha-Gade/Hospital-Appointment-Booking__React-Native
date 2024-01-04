@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "Hospital-Manegement-App",
-    "scheme": "Hospital-Manegement-App",
-    "slug": "Hospital-Manegement-App",
+    "scheme": "hospitalmanagementapp",
+    "slug": "hospital-management-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,10 +22,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.aniruddha_gade.hospitalappointmentbookingapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "80678d38-1cd6-4e73-97d9-3bb5b16c9d16"
+      }
+    },
+    "owner": "aniruddha_gade"
   }
 }
