@@ -12,8 +12,8 @@ In this project, I have build a hospital appointment booking app using React Nat
 | Section                 | Description                                  |
 |-------------------------|----------------------------------------------|
 | [Description](#description-)        | 📚 Description of App            |
-| [Features](#features-)             | 🏰 Features of the project         |
 | [Technologies](#tech-stack-)    | 💻🔧 Technologies used in the project      |
+| [Features](#features-)             | 🏰 Features of the project         |
 | [Screen Preview](#screen-preview-)         | 🖥️ Screen Preview        |
 
 
@@ -57,4 +57,4 @@ Managed appointments, doctors, and patients in a well-organized database, develo
 <img width='100%' src='' />
 <img width='100%' src='' />
 
-# Random Home Page Background 🏠 
+# Home Page 🏠 
