@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 
-const BASE_URL = "http:/192.168.0.104:1337/api"
+const BASE_URL = "http://192.168.1.118:1337/api" 
 // const BASE_URL = process.env.EXPO_PUBLIC_BASE_URL
 const API_KEY = process.env.EXPO_PUBLIC_API_KEY
 

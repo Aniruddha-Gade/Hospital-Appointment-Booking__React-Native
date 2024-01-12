@@ -1,7 +1,8 @@
 {
   "expo": {
     "name": "Hospital-Manegement-App",
-    "scheme": "hospitalmanagementapp",
+    "scheme": "hospital-management-app",
+    "description": "This is Hospital Appointment Booking App made with React Native",
     "slug": "hospital-management-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -28,11 +29,11 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "owner": "aniruddha_gade",
     "extra": {
       "eas": {
-        "projectId": "80678d38-1cd6-4e73-97d9-3bb5b16c9d16"
+        "projectId": "7791094b-e488-4738-a88b-a4a41b90efbb"
       }
-    },
-    "owner": "aniruddha_gade"
+    }
   }
 }
