@@ -27,18 +27,16 @@ Managed appointments, doctors, and patients in a well-organized database, develo
 
 
 ## Tech Stack 💻🔧 
- 
-<code title="React.js"><img height="40" src="https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/react%20ogo.png"></code>
-<code title="Vite"><img height="40" src="https://play-lh.googleusercontent.com/algsmuhitlyCU_Yy3IU7-7KYIhCBwx5UJG4Bln-hygBjjlUVCiGo1y8W5JNqYm9WW3s"></code>
-<code title="Tailwind css"><img height="35" src="https://github.com/Aniruddha-Gade/Hospital-Appointment-Booking__React-Native/blob/main/screenshots/clerk.png"></code>
-<code title="Tailwind css"><img height="35" src="https://clerk.com/_next/image?url=%2Fimages%2Fclerk-logomark-square.svg&w=2048&q=75"></code>
 
 
+| Logo                 | Technology                                  |
+|-------------------------|----------------------------------------------|
+| <code title="React.js"><img height="40" src="https://github.com/Aniruddha-Gade/Study-Notion-EdTech__MERN-Stack/blob/main/screenshots/Tech%20stack%20logo/react%20ogo.png"></code>        |React Native|
+| <code title="React.js"><img height="40" src="https://play-lh.googleusercontent.com/algsmuhitlyCU_Yy3IU7-7KYIhCBwx5UJG4Bln-hygBjjlUVCiGo1y8W5JNqYm9WW3s"></code>      |Clerk|
+| <code title="React.js"><img height="40" src="https://clerk.com/_next/image?url=%2Fimages%2Fclerk-logomark-square.svg&w=2048&q=75"></code>      | Strapi|
+| <code title="React.js"><img height="40" src="https://github.com/Aniruddha-Gade/Hospital-Appointment-Booking__React-Native/blob/main/screenshots/clerk.png"></code> |Expo|
 
-- React Native
-- Expo
-- Strapi
-- Clerk
+
 
  <hr/>
 
