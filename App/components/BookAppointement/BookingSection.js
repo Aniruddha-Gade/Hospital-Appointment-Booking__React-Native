@@ -96,7 +96,7 @@ const BookingSection = ({ hospital }) => {
 
   return (
     <View>
-      <Text style={{ fontSize: 18, color: Colors.gray }}>Book Appointement</Text>
+      <Text style={{ fontSize: 18, color: Colors.gray, marginBottom:10 }}>Book Appointement</Text>
 
       <SubHeading subHeadingTitle={'Day'} seeAll={false} />
 
