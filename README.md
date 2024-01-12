@@ -50,3 +50,10 @@ Created a robust backend API using Strapi, and implemented secure user authentic
 - 🔄 Connected the frontend and backend to make app fully functional.
 
 
+
+##  🖥️ Screen Preview :
+
+# Random Home Page Background 🏠 
+<img width='100%' src='' />
+<img width='100%' src='' />
+
