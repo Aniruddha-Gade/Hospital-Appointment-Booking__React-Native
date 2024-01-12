@@ -52,9 +52,9 @@ Managed appointments, doctors, and patients in a well-organized database, develo
 
 
 
-##  Screen Preview 🖥️
+## Screen Preview 🖥️
+
+<img width='100%' src='' />
+<img width='100%' src='' />
 
 # Random Home Page Background 🏠 
-<img width='100%' src='' />
-<img width='100%' src='' />
-
