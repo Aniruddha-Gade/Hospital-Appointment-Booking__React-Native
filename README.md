@@ -40,7 +40,7 @@ Created a robust backend API using Strapi, and implemented secure user authentic
 - Clerk
 
   
-## Features
+## Features 🎨🔧
 
 - 📱 Build a hospital appointment booking app with React Native and Expo.
 - 🚀 Developed a robust backend API using Strapi.
