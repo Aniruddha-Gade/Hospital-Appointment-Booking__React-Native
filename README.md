@@ -33,14 +33,16 @@ Managed appointments, doctors, and patients in a well-organized database, develo
 <code title="Tailwind css"><img height="35" src="https://github.com/Aniruddha-Gade/Hospital-Appointment-Booking__React-Native/blob/main/screenshots/clerk.png"></code>
 <code title="Tailwind css"><img height="35" src="https://clerk.com/_next/image?url=%2Fimages%2Fclerk-logomark-square.svg&w=2048&q=75"></code>
 
-<hr/>
+
 
 - React Native
 - Expo
 - Strapi
 - Clerk
 
-  
+ <hr/>
+
+ 
 ## Features 🎨
 
 - 📱 Build a hospital appointment booking app with React Native and Expo.
