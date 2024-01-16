@@ -52,7 +52,7 @@ Managed appointments, doctors, and patients in a well-organized database, develo
 
 
 
-## Screen-Preview 🖥️
+## Screen Preview 🖥️
 
 # Login 🏠 
 <img src='https://github.com/Aniruddha-Gade/Hospital-Appointment-Booking__React-Native/blob/main/screenshots/Screenshot_1705423089.png' width='300' height='600' />
